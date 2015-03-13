@@ -1,10 +1,10 @@
 '/home/rvalenzuela/P3/nav/case03/leg01'         	! DIRECTORY FOR WRITING OUTPUT FILES (also contains DTM)
 '/home/rvalenzuela/P3/CfRadial/case03/leg01' 	! DIRECTORY FOR READING TEXT FILE (CfRadial files converted to text)
-       161             																! total number of sweep files to process (CfRadial files converted to text)
-       1 																				! first sweep file (normally 1, use other number when debugging)
-23 01 2001                 												! DD MM YYYY
-211100 212654              											! HHMMSS_start HHMMSS_stop
-39.4  -124                 														! LAT LON // origin of the reference system (e.g. top-left of DTM corner)
+161							! total number of sweep files to process (CfRadial files converted to text)
+1							! first sweep file (normally 1, use other number when debugging)
+23 01 2001						! DD MM YYYY
+211100 212654					! HHMMSS_start HHMMSS_stop
+39.4  -124						! LAT LON // origin of the reference system (e.g. top-left of DTM corner)
 1 2 3 4 5 0 0 0 0 0 0 0 0 0 0    									!15 GATES TO DISMISS (0 if not)
 0. 46.05                  														! Dmin, Dmax (km) FOR RADAR_DATA
 1                          														! ALTITUDE (pressure=1,radar=2) ( orography -> 1)
