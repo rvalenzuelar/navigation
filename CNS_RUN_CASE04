@@ -34,3 +34,4 @@
 ----------------------------------------------------------------------------
 1													! WRITE OUTPUT LOG FILE (1 or 0, save each ray log)
 0													! PRINT SCREEN (0=only resume of last sweep processed; 1=each ray log; 2=every other ray; etc)
+  
