@@ -1,6 +1,0 @@
-#!/bin/bash
-# Bash script to compile the navigation correction code
-
-rm *.o aster2txt cns_eldo_cai readnetcdf_DBZ_VR
-make
-echo
