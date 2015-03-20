@@ -1,4 +1,8 @@
 #!/bin/csh
+
+#	MBell script for replacing GPS coordinates with GPS-INS
+#	corrected coordinates
+
 # make sure there aren't any line continuation characters (ie: \)
 setenv DORADE_DIR "./"
 setenv AC_NETCDF_FILES "052403_n42.nc"
