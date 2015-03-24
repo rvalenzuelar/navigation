@@ -10,7 +10,11 @@ FLIB="-L$NETCDF/lib -lnetcdf -lnetcdff -lcurl -lhdf5 -lhdf5_hl"
 
 FINC="-I$NETCDF/include -I/usr/include/geotiff"
 
-CLIB="-L/usr/lib -lgeotiff -ltiff -L/usr/local/lib"
+# for home
+# CLIB="-L/usr/lib -lgeotiff -ltiff -L/usr/local/lib"
+
+# for work
+CLIB="-lgeotiff -ltiff"
 
 CINC="-I/usr/include/geotiff"
 
