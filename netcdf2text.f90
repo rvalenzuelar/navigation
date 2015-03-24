@@ -8,7 +8,9 @@
 
 	! //////////////////////////////////////////////////////////////////////////////////////////
 	!   This program creates a list with netcdf (CfRadial) files
-	!   contained in the current folder and output a text file
+	!   contained in the current folder and output a text file.
+	!
+	!   The executable needs to be located in the same CfRadial Folder.
 	!
 	!   Syntax:
 	!	 within the folder containing CfRadial files run

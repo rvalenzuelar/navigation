@@ -30,6 +30,7 @@
 
  VDOP_surf (m/s) sum_wghts,mean,stdv :       0.0   0.000   0.000
 
+<<<<<<< HEAD
  dVDOP_insitu (m/s) sum_wghts,mean,stdv :   23099.0   1.403  42.934
    IRADAR (AR=1,AV=2) :1
 
@@ -38,6 +39,16 @@
    IRADAR (AR=1,AV=2) :2
 
     -> VDOP-PROJWIND_LEFT_npts,mean,stdv:    5173.5  15.948  10.607
+=======
+ dVDOP_insitu (m/s) sum_wghts,mean,stdv :   23099.0   1.399  42.930
+   IRADAR (AR=1,AV=2) :1
+
+    -> VDOP-PROJWIND_LEFT_npts,mean,stdv:    5425.4 -56.056  11.336
+    -> VDOP-PROJWIND_RIGHT_npts,mean,stdv:    6363.4 -15.556   9.273
+   IRADAR (AR=1,AV=2) :2
+
+    -> VDOP-PROJWIND_LEFT_npts,mean,stdv:    5173.5  15.925  10.539
+>>>>>>> 5ca1db7668256f6b97771dffefed8cbf273f8b8e
     -> VDOP-PROJWIND_RIGHT_npts,mean,stdv:    6136.4  57.531   9.776
 
 

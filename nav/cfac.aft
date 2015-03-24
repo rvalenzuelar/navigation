@@ -12,5 +12,9 @@ heading_corr            =   0.000
 roll_corr               =   0.000
 pitch_corr              =   6.761
 drift_corr              = -13.456
+<<<<<<< HEAD
 rot_angle_corr          =-360.950
+=======
+rot_angle_corr          =-360.949
+>>>>>>> 5ca1db7668256f6b97771dffefed8cbf273f8b8e
 tilt_corr               =  -1.109
