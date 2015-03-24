@@ -1,9 +1,9 @@
 './nav'									! DIRECTORY FOR WRITING OUTPUT FILES (also contains DTM)
-'/home/raul/Radardata/p3/case04/cfradial/20010125'	! DIRECTORY FOR READING TEXT FILE (CfRadial files converted to text)
+'/home/raul/Radardata/p3/case04/cfradial'	! DIRECTORY FOR READING TEXT FILE (CfRadial files converted to text)
 106										! total number of sweep files to process (CfRadial files converted to text)
 1										! first sweep file (normally 1, use different number when debugging)
 25 01 2001								! DD MM YYYY
-184000 185000							! HHMMSS_start HHMMSS_stop
+184450 184910							! HHMMSS_start HHMMSS_stop
 38.2  -123.5							! LAT LON // origin of the reference system (e.g. top-left of DTM corner)
 1 2 3 4 5 0 0 0 0 0 0 0 0 0 0			! 15 GATES TO DISMISS (0 if not)
 0. 46.05								! Dmin, Dmax (km) FOR RADAR_DATA
