@@ -6,9 +6,10 @@
 # make sure there aren't any line continuation characters (ie: \)
 export DORADE_DIR='/home/rvalenzuela/P3/dorade/case04_gpsins_corrected'
 export AC_NETCDF_FILES='010125I.nc'
-export AC_NETCDF_ALIASES='ONLY LATC < lat LONC < lon '
+export AC_NETCDF_ALIASES='LATC < LAT LONC < LON PALT < NOT HGME < NOT GALT < NOT PITCH < NOT ROLL < NOT VEWC < NOT VNSC < NOT THDG < NOT  UIC < NOT VIC < NOT WIC < NOT'
 export INPUT_FORMAT='SWEEP_FILES'
 export OUTPUT_FLAGS='SWEEP_FILES'
+export TIME_LIMITS='01/25/2001:18:44 < 18:50'
 
 # Optional parameters
 #export NCP_THRESHOLD_VAL "NCP 0.25"

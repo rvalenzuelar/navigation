@@ -6,11 +6,14 @@
 #  Raul Valenzuela
 #  July, 2104
 
-inputfiles=/home/rvalenzuela/P3/dorade/case04
-outputdir=/home/rvalenzuela/P3/CfRadial/case04
-
 #inputfiles=/home/rvalenzuela/P3/dorade/case03/leg01
 #outputdir=/home/rvalenzuela/P3/CfRadial/case03_new
+
+# inputfiles=/home/rvalenzuela/P3/dorade/case04
+# outputdir=/home/rvalenzuela/P3/CfRadial/case04
+
+inputfiles=/home/rvalenzuela/P3/dorade/case04_gpsins_corrected
+outputdir=/home/rvalenzuela/P3/dorade/case04_gpsins_corrected
 
 echo 
 echo "Converting dorade files from: "  
