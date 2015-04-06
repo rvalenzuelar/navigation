@@ -3,14 +3,14 @@
 45                        ! Number of text files
 25 01 2001                 ! DD MM YYYY
 184450 1824910              ! HHMMSS_start HHMMSS_stop
-38.2  -123.5                 ! LAT LON ORIGIN (degrees) 			---> COORDINATES OF DTM? LEG?
-1 2 3 4 5 0 0 0 0 0 0 0 0 0 0         ! 15 GATES TO DISMISS (0 if not)	---> HOW TO USE IT?
-0. 40.                     ! Dmin, Dmax (km) FOR RADAR_DATA		---> DISTANCE OF ANALYSIS?
-1                          ! ALTITUDE (pressure=1,radar=2) ( orography -> 1)	--->WHAT WOULD BE THE DIFFERENCE?
-+4. 60.                    ! REF_min (at 10km), REF_max (dBZ)
+38.2  -123.5                 ! LAT LON ORIGIN (degrees) 			---> center of obs domain
+1 2 3 4 5 6 7 0 0 0 0 0 0 0 0         ! 15 GATES TO DISMISS (0 if not)	
+0. 40.                     ! Dmin, Dmax (km) FOR RADAR_DATA		
+2                          ! ALTITUDE (pressure=1,radar=2) ( orography -> 1)	
++4. 50.                    ! REF_min (at 10km), REF_max (dBZ)
 2                          ! VDOP(1:VR,2:VG,3:VU)					--->1:RAW(VR), 2:CORRECTED FOR VACFT(VG), 3:UNFOLDED(VU
 ---------------------------------------------------------------------------
-1.000 1.000 0.000          ! REL_WGHTS (0->1) FOR dZsurf, Vsurf, dVinsitu
+1.000 0.000 1.000          ! REL_WGHTS (0->1) FOR dZsurf, Vsurf, dVinsitu
 ---------------------------------------------------------------------------
 0 0                        ! RETRIEVAL OF dTILT_aft, dTILT_fore (1/0)
 1 1                        ! RETRIEVAL OF dROTA_aft, dROTA_fore (1/0)

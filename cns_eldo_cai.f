@@ -39,11 +39,13 @@ c**** FICHIER 'mes_parametres'
 c******************************************************************
 c
 
-      parameter (MAXRAD=2,MAXFREQ=5,MAXPARM=10,MAXPORT=2000)
+      parameter (MAXRAD=2,MAXFREQ=5,MAXPARM=10,MAXPORT=800)
       parameter (MAXFREQRAD=MAXFREQ*MAXPARM)
       parameter (MAXPARAD=MAXRAD*MAXPARM)
       parameter (MAXPORAD=MAXRAD*MAXPORT)
       parameter (MAXPARIS=256)
+
+! port means gate in french (RV)
 
 c Variable for reading text files
 
@@ -246,11 +248,11 @@ c
       deg_lat=111.13
       conv=3.14159/180.
       rayter=6370.  
-      xncp_min=0.25
-      sw_max=5.
+      xncp_min=0.25          ! threshold for NCP
+      sw_max=5.               ! threshold for SW
       vdop_max=200.
       selh_surf=-0.15
-      zacftmin_surf=0.5      
+      zacftmin_surf=0.5      ! minimum aircraft altitude
       igstart_surf=5
       refsurf_min0=20.
       gradrefsurf_min0=50.
@@ -2376,7 +2378,8 @@ c------------------------------------------------------------------
       endif
 c------------------------------------------------------------------
       x_acft=(xlon_acft-orig_lon)*deg_lon+dxwe_guess
-      y_acft=(xlat_acft-orig_lat)*deg_lat+dysn_guess
+      ! y_acft=(xlat_acft-orig_lat)*deg_lat+dysn_guess
+      y_acft=(orig_lat-xlat_acft)*deg_lat+dysn_guess ! (RV)
       if(ipr_alt.eq.1)then
 	z_acft=p_alt_acft+dzacft_guess
       else
@@ -2865,6 +2868,8 @@ c**** IF THIS SURFACE POINT IS CORRECT (if WGHTSURF_ray > 0)
 c**** THEN COMPARE WITH THE SURFACE POINT DERIVED FROM THE DTM
 c******************************************************************
 c
+        ! print *,'hsurf_ray ; wghtsurf_ray', hsurf_ray, wghtsurf_ray !(RV)
+
         if(hsurf_ray.gt.-900..and.wghtsurf_ray.gt.0.)then
 c!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       if( nb_ray(iradar_ray).eq.10*(nb_ray(iradar_ray)/10) )then
@@ -2888,8 +2893,10 @@ c**** INTERPOLATION OF ALT_DTM(x,y) [READ ON SURF_DTM_* OR CONSTANT]
 c******************************************************************
 c
 
-        ! print *,'xmin_dtm ; xmax_dtm=',xmin_dtm, xmax_dtm ! RV
-        ! print *,'ymin_dtm ; ymax_dtm=',ymin_dtm,ymax_dtm ! RV
+        ! print *,'xsurf_ray =',xsurf_ray
+        ! print *,'xmin_dtm ; xmax_dtm=',xmin_dtm, xmax_dtm 
+        ! print *,'ysurf_ray=',ysurf_ray
+        ! print *,'ymin_dtm ; ymax_dtm=',ymin_dtm,ymax_dtm !(RV)
 
 	  if(     xsurf_ray.gt.xmin_dtm
      &       .and.xsurf_ray.lt.xmax_dtm
@@ -2929,6 +2936,9 @@ c**** IF ( ABS(HSURF_RADAR-HSURF_DTM) < DHSURF_MAX ) THEN
 c**** !!!! DHSURF_MAX=999. !!!! -> NOT IN USE !!!!
 c******************************************************************
 c
+          
+            ! print *,'abs(d_hsurf) ; dhsurf_max', abs(d_hsurf), dhsurf_max (RV)
+
             if(abs(d_hsurf).lt.dhsurf_max)then
               ssurfins=ssurfins+wghtsurf_ray
 
@@ -3306,9 +3316,9 @@ c--------------------------------------------------------------
 c
 c                  if(abs(vdopsurf_ray).lt.vdopsurf_max)then
 
-cTEST CAI
-                   print *,'vdopsurf_ray =',vdopsurf_ray
-cTEST END
+c TEST CAI
+                   ! print *,'vdopsurf_ray =',vdopsurf_ray
+c TEST END
 
 		   if(abs(vdopsurf_ray).lt.6.)then
 c
