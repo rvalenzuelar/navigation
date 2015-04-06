@@ -41,7 +41,6 @@ def replace_cfradial_coords( stdtape_filepath ):
 
 	for f in np.arange(nlist):
 		# open cfradial file for reading and writing
-		print ''
 		print 'Processing: '+nclist[f]
 		cfrad_file = Dataset(nclist[f],'r+') 
 
