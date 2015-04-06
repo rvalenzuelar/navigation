@@ -1,9 +1,14 @@
 #!/bin/bash
 
 
+# I/O directories
 INDIR="/home/rvalenzuela/P3/dorade/case04"
 OUTDIR="/home/rvalenzuela/P3/dorade/case04_coords_cor"
+
+# standard tape file
 STDTAPE="/home/rvalenzuela/Github/navigation/010125I.nc"
+
+# python function
 PYFUN="/home/rvalenzuela/Github/navigation/replace_cfradial_coords.py"
 
 echo
