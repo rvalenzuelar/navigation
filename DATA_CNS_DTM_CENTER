@@ -1,4 +1,4 @@
-'./nav2'        ! 'DIRECTORY FOR WRITING'
+'./nav3'        ! 'DIRECTORY FOR WRITING'
 '/home/rvalenzuela/P3/dorade/case04_coords_cor/cfrad'     ! 'DIRECTORY FOR READING TEXT FILE
 45                        ! Number of text files
 25 01 2001                 ! DD MM YYYY
