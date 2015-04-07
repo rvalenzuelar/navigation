@@ -2,7 +2,7 @@
  HHMMSS_min HHMMSS_max : 184450   824910
 
  FIELDS TAKEN INTO ACCOUNT
-  -> REL.WGHT_dZsurf,Vsurf,dVinsitu :  1.000 1.000 0.000
+  -> REL.WGHT_dZsurf,Vsurf,dVinsitu :  1.000 0.000 1.000
 
  VARIABLES TAKEN INTO ACCOUNT
   -> D_TILT_AFT,D_TILT_FORE (1/0) :  0 0
@@ -19,17 +19,17 @@
 
 
 
- dZ_surf (km) sum_wghts,mean,stdv :       0.0   0.000   0.000
+ dZ_surf (km) sum_wghts,mean,stdv :   18112.5  -0.028   0.067
 
- VDOP_surf (m/s) sum_wghts,mean,stdv :       0.0   0.000   0.000
+ VDOP_surf (m/s) sum_wghts,mean,stdv :    2427.9   2.668   2.765
 
- dVDOP_insitu (m/s) sum_wghts,mean,stdv :   26448.0   0.199  40.301
+ dVDOP_insitu (m/s) sum_wghts,mean,stdv :   24087.7   0.792  42.675
    IRADAR (AR=1,AV=2) :1
-    -> VDOP-PROJWIND_LEFT_npts,mean,stdv:    6397.6 -40.447  32.191
-    -> VDOP-PROJWIND_RIGHT_npts,mean,stdv:    6821.3 -20.276   8.779
+    -> VDOP-PROJWIND_LEFT_npts,mean,stdv:    5823.2 -53.153  16.317
+    -> VDOP-PROJWIND_RIGHT_npts,mean,stdv:    6217.6 -18.547   9.007
    IRADAR (AR=1,AV=2) :2
-    -> VDOP-PROJWIND_LEFT_npts,mean,stdv:    6406.9  22.968  10.915
-    -> VDOP-PROJWIND_RIGHT_npts,mean,stdv:    6821.8  37.405  36.007
+    -> VDOP-PROJWIND_LEFT_npts,mean,stdv:    5828.9  20.664  12.597
+    -> VDOP-PROJWIND_RIGHT_npts,mean,stdv:    6218.1  52.021  21.952
 
 
 
@@ -41,19 +41,19 @@
  /////////////////////////////////////////////
 
 
- D_dROTA_aft (deg) guess,residual,total :  -0.000  0.000  0.000
+ D_dROTA_aft (deg) guess,residual,total :  -0.000  1.188  1.188
 
- D_dROTA_fore (deg) guess,residual,total :  -0.000  0.000  0.000
+ D_dROTA_fore (deg) guess,residual,total :  -0.000  1.220  1.220
 
- D_PITCH (deg) guess,residual,total :  -0.000  0.000  0.000
+ D_PITCH (deg) guess,residual,total :  -0.000  0.898  0.898
 
- D_HEADING (deg) guess,residual,total :  -0.000  0.000  0.000
+ D_HEADING (deg) guess,residual,total :  -0.000 -3.179 -3.179
 
- RANGE_DELAY_AFT (m) guess,residual,total :     0.    0.    0.
+ RANGE_DELAY_AFT (m) guess,residual,total :     0.  -85.  -85.
 
- RANGE_DELAY_FORE (m) guess,residual,total :     0.    0.    0.
+ RANGE_DELAY_FORE (m) guess,residual,total :     0.  -55.  -55.
 
- D_VHACFT (m/s) guess,residual,total :  -0.00  0.00  0.00
+ D_VHACFT (m/s) guess,residual,total :  -0.00************
 
 
 
