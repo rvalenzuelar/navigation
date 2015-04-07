@@ -14,6 +14,7 @@
 #include "cpl_serv.h"
 #include <stdio.h>
 #include <string.h>
+ #include <math.h> /*round*/
 
 static void GTIFPrintCorners( GTIF *, GTIFDefn *, FILE *, int, int, int, int );
 
@@ -111,10 +112,23 @@ int main(int argc, char *argv[])
 		GTIFPrintCorners( gtif, &defn, stdout, xsize, ysize, inv_flag, dec_flag );
 		const char* project = "ASTERGDEM";
 		const char* yymmdd = "090629";
-		double originx, originy;
-		GTIFImageToPCS( gtif, &originx, &originy);
-		int lat = (int)originy*1000;
-		int lon = (int)originx*1000;
+
+		// -----------------upper left corner--------------
+		// double originx, originy;
+		// GTIFImageToPCS( gtif, &originx, &originy); 
+		// int lat = (int)originy*1000;
+		// int lon = (int)originx*1000;
+		//---------------------------------------------------------
+
+		// -----------------lower left corner--------------				
+		double ycorner, xcorner;
+		xcorner=0.0;
+		ycorner=ysize;
+		GTIFImageToPCS( gtif, &xcorner, &ycorner); 
+		int lat = (int)round(ycorner*1000);
+		int lon = (int)round(xcorner*1000);
+		// -------------------------------------------------------(RV)
+
 		int xmin = 0;
 		int ymin = 0;
 		int nx = xsize/skip + 1;
