@@ -5,7 +5,7 @@
 # See http://www.unidata.ucar.edu/software/netcdf/examples/programs/
 #
 # Raul Valenzuela
-# March, 2015
+# April, 2015
 
 import sys 
 
