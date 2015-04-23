@@ -2,12 +2,17 @@
 
 
 # I/O directories
-INDIR="/home/rvalenzuela/P3/dorade/case04"
-# OUTDIR="/home/rvalenzuela/P3/dorade/case04_coords_cor2"
-OUTDIR="/home/rvalenzuela/P3/dorade/dummy"
+# INDIR="/home/rvalenzuela/P3/dorade/case04"
+# # OUTDIR="/home/rvalenzuela/P3/dorade/case04_coords_cor2"
+# OUTDIR="/home/rvalenzuela/P3/dorade/dummy"
+
+INDIR="/home/rvalenzuela/P3/dorade/case03/leg01"
+OUTDIR="/home/rvalenzuela/P3/dorade/case03_coords_cor"
+
 
 # standard tape file
-STDTAPE="/home/rvalenzuela/Github/navigation/010125I.nc"
+# STDTAPE="/home/rvalenzuela/Github/navigation/010125I.nc"
+STDTAPE="/home/rvalenzuela/Github/navigation/010123I.nc"
 
 # python function
 PYFUN="/home/rvalenzuela/Github/navigation/replace_cfradial_coords.py"

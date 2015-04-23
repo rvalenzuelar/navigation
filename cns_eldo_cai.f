@@ -29,7 +29,7 @@ c******************************************************************
 
       program cns_eldo
 c
-      parameter (nvar=12,nxysurfmax=1441)
+      parameter (nvar=12,nxysurfmax=1900)
 c
 c     include '/home/users/rouf/SOURCES/ELDO/mes_parametres'
 c CAI-START: Inlcude the parameter file mes_parametres directly below
@@ -547,7 +547,7 @@ c CAI STOP
 	altdtm_max=-999.
         do jdtm=1,ny_dtm
 	   read(20,333)(itab(idtm),idtm=1,nx_dtm)
-  333      format(1440i6)
+  333      format(1900i6)
       	   do idtm=1,nx_dtm
       	      if(itab(idtm).gt.-1000)then
       		h_dtm=float(itab(idtm))/1000.
