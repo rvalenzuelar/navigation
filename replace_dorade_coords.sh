@@ -6,9 +6,11 @@
 # # OUTDIR="$HOME/P3/dorade/case04_coords_cor2"
 # OUTDIR="$HOME/P3/dorade/dummy"
 
-INDIR="$HOME/P3/dorade/case03/leg01"
-OUTDIR="$HOME/P3/dorade/case03_coords_cor"
+# INDIR="$HOME/P3/dorade/case03/leg01"
+# OUTDIR="$HOME/P3/dorade/case03_coords_cor"
 
+INDIR="$HOME/P3/dorade/case03/leg03"
+OUTDIR="$HOME/P3/dorade/case03_coords_cor/leg03"
 
 # standard tape file
 # STDTAPE="$HOME/Github/navigation/010125I.nc"
