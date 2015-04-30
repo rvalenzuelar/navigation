@@ -469,7 +469,7 @@ c
       endif
 c
       close(99)
-      if(no_lect.gt.900)go to 3
+      ! if(no_lect.gt.900)go to 3
 c
 c******************************************************************
 c**** GENERATE THE SURFACE ARRAYS
