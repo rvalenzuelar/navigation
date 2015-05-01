@@ -485,12 +485,21 @@ c------------------------------------------------------------------
 c---- FROM THE INPUT "SURF_DTM_*" FILE
 c------------------------------------------------------------------
 c
-       print *,' IFIDTM=1 -> READ THE "SURF_DTM_*" FILE #20 :'
-     &         ,directory(1:ndir)//'/'//dtm_file(1:ndtmfile)
-       open(20
-     &     ,file=directory(1:ndir)//'/'//dtm_file(1:ndtmfile)
-     &     ,form='formatted',status='unknown')
+c       print *,' IFIDTM=1 -> READ THE "SURF_DTM_*" FILE #20 :'
+c     &         ,directory(1:ndir)//'/'//dtm_file(1:ndtmfile)
+c       open(20
+c     &     ,file=directory(1:ndir)//'/'//dtm_file(1:ndtmfile)
+c     &     ,form='formatted',status='unknown')
 
+!------------------------------------------------------------------------------------------------
+! Open dtm file located in the current directory 
+! (instead of the output directory)
+       print *,' IFIDTM=1 -> READ THE "SURF_DTM_*" FILE #20 :'
+     &         ,'./'//dtm_file(1:ndtmfile)
+       open(20
+     &     ,file='./'//dtm_file(1:ndtmfile)
+     &     ,form='formatted',status='unknown')
+!---------------------------------------------------------------------------------------------(RV)
 !       read(20,111)yymmdd_dtm,suff_dtm
 !    &              ,iolat_dtm,iolon_dtm
 !    &              ,iha_dtm,ima_dtm,isa_dtm
