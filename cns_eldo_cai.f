@@ -208,7 +208,7 @@ c
      &         ,istart_sweep(2)
      &         ,itab(nxysurfmax),ihms_dtm(6),ialtsurf_wri(nxysurfmax)   
 c
-      character path_abs*18,directory*60,dir_read*60
+      character path_abs*18,directory*60,dir_read*100
      &         ,fich_sis*30
      &         ,dtm_file*50,fich_cornav*30
      &         ,wrisurfile*50
@@ -248,11 +248,11 @@ c
       deg_lat=111.13
       conv=3.14159/180.
       rayter=6370.  
-      xncp_min=0.25          ! threshold for NCP
-      sw_max=5.               ! threshold for SW
+      xncp_min=0.25          ! threshold for NCP (RV)
+      sw_max=5.               ! threshold for SW (RV)
       vdop_max=200.
       selh_surf=-0.15
-      zacftmin_surf=0.5      ! minimum aircraft altitude
+      zacftmin_surf=0.5      ! minimum aircraft altitude (RV)
       igstart_surf=5
       refsurf_min0=20.
       gradrefsurf_min0=50.
@@ -260,7 +260,7 @@ c
       vdopsurf_max=999.
       dmax_insitu=5.
       xpmin_contray=3.
-      dvdop_max=10.
+      dvdop_max=10.        ! dismiss vdop if |vdop-vdop_prev|>dvdop_max after unfolding
       dvdopinsitu_max=999.
       selhinsitu_max=0.1
       ssurfins_min=1.
@@ -2387,11 +2387,11 @@ c------------------------------------------------------------------
       endif
 c------------------------------------------------------------------
       x_acft=(xlon_acft-orig_lon)*deg_lon+dxwe_guess
-      ! y_acft=(xlat_acft-orig_lat)*deg_lat+dysn_guess
+      y_acft=(xlat_acft-orig_lat)*deg_lat+dysn_guess
 c------------------------------------------------------------------------------
 c This version works well with the lower left coordinate
 c in the DTM ASCII file (RV)
-      y_acft=(orig_lat-xlat_acft)*deg_lat+dysn_guess 
+      ! y_acft=(orig_lat-xlat_acft)*deg_lat+dysn_guess 
 c------------------------------------------------------------------------------      
       if(ipr_alt.eq.1)then
 	z_acft=p_alt_acft+dzacft_guess
