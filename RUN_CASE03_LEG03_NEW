@@ -1,16 +1,16 @@
-'./nav_case03_leg02'        ! 'DIRECTORY FOR WRITING'
-'/home/rvalenzuela/P3/dorade/case03_coords_cor/leg02/cfrad'     ! 'DIRECTORY FOR READING TEXT FILE
-51                        ! Number of text files
+'./nav_case03_leg03_new'        ! 'DIRECTORY FOR WRITING'
+'/home/rvalenzuela/P3/dorade/case03_coords_cor/leg03_new/cfrad'     ! 'DIRECTORY FOR READING TEXT FILE
+173                        ! Number of text files
 23 01 2001                 ! DD MM YYYY
-213300 213800              ! HHMMSS_start HHMMSS_stop
+214400 214801              ! HHMMSS_start HHMMSS_stop
 38.55  -123.55                 ! LAT LON ORIGIN (degrees) 			---> center of obs domain
 1 2 3 4 5 6 7 0 0 0 0 0 0 0 0         ! 15 GATES TO DISMISS (0 if not)	
 0. 40.                     ! Dmin, Dmax (km) FOR RADAR_DATA		
 1                          ! ALTITUDE (pressure=1,radar=2) ( orography -> 1)	
-+4. 50.                    ! REF_min (at 10km), REF_max (dBZ)
-2                          ! VDOP(1:VR,2:VG,3:VU)					--->1:RAW(VR), 2:CORRECTED FOR VACFT(VG), 3:UNFOLDED(VU
+14. 40.                    ! REF_min (at 10km), REF_max (dBZ)
+1                          ! VDOP(1:VR,2:VG,3:VU)		--->1:RAW(VR), 2:CORRECTED FOR VACFT(VG), 3:UNFOLDED(VU
 ---------------------------------------------------------------------------
-1.000 0.000 1.000          ! REL_WGHTS (0->1) FOR dZsurf, Vsurf, dVinsitu
+1.000 1.000 0.000          ! REL_WGHTS (0->1) FOR dZsurf, Vsurf, dVinsitu
 ---------------------------------------------------------------------------
 0 0                        ! RETRIEVAL OF dTILT_aft, dTILT_fore (1/0)
 1 1                        ! RETRIEVAL OF dROTA_aft, dROTA_fore (1/0)
@@ -31,3 +31,6 @@
 1 'merged_dem_38-39_123-124_extended.asc' 0.000  ! READ (1/0) DTM, 'SURF_DTM_*'(if 1), H_cst(if 0 in km)
 0 'SURF_E_1720-1725_C1'    ! WRITE (1/0) SURF_EL_* , 'SURF_EL_*'
 100. 1.                    ! XY_width, Hxy of 'SURF_wr**'
+
+214000 214419              ! HHMMSS_start HHMMSS_stop
+213900 215556              ! HHMMSS_start HHMMSS_stop

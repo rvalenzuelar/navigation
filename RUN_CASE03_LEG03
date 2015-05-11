@@ -8,7 +8,7 @@
 0. 40.                     ! Dmin, Dmax (km) FOR RADAR_DATA		
 1                          ! ALTITUDE (pressure=1,radar=2) ( orography -> 1)	
 +4. 50.                    ! REF_min (at 10km), REF_max (dBZ)
-2                          ! VDOP(1:VR,2:VG,3:VU)					--->1:RAW(VR), 2:CORRECTED FOR VACFT(VG), 3:UNFOLDED(VU
+2                          ! VDOP(1:VR,2:VG,3:VU)		--->1:RAW(VR), 2:CORRECTED FOR VACFT(VG), 3:UNFOLDED(VU
 ---------------------------------------------------------------------------
 1.000 1.000 0.000          ! REL_WGHTS (0->1) FOR dZsurf, Vsurf, dVinsitu
 ---------------------------------------------------------------------------
