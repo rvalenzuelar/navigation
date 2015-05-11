@@ -1,0 +1,61 @@
+ YYYYMMDD :     20010125
+ HHMMSS_min HHMMSS_max : 184450   824910
+
+ FIELDS TAKEN INTO ACCOUNT
+  -> REL.WGHT_dZsurf,Vsurf,dVinsitu :  1.000 0.000 1.000
+
+ VARIABLES TAKEN INTO ACCOUNT
+  -> D_TILT_AFT,D_TILT_FORE (1/0) :  0 0
+  -> D_ROTA_AFT,D_ROTA_FORE (1/0) :  1 1
+  -> D_PITCH,D_HEADING (1/0) :  1 1
+  -> RANGE_DELAY_AFT,RANGE_DELAY_FORE (1/0) :  1 1
+  -> D_XWE,D_YSN,D_ZACFT (1/0) :  0 0 0
+  -> D_VHACFT (1/0) :  1
+ READS THE SURF_DTM_* FILE :                               ./nav3/flat_dtm.txt
+ NO SURF_EL_* FILE TO WRITE 
+
+
+ NB_SWEEPS FOR THE AFT AND FORE RADARS:    21   22
+
+
+
+ dZ_surf (km) sum_wghts,mean,stdv :       0.0   0.000   0.000
+
+ VDOP_surf (m/s) sum_wghts,mean,stdv :       0.0   0.000   0.000
+
+ dVDOP_insitu (m/s) sum_wghts,mean,stdv :   24087.7   0.792  42.675
+   IRADAR (AR=1,AV=2) :1
+    -> VDOP-PROJWIND_LEFT_npts,mean,stdv:    5823.2 -53.153  16.317
+    -> VDOP-PROJWIND_RIGHT_npts,mean,stdv:    6217.6 -18.547   9.007
+   IRADAR (AR=1,AV=2) :2
+    -> VDOP-PROJWIND_LEFT_npts,mean,stdv:    5828.9  20.664  12.597
+    -> VDOP-PROJWIND_RIGHT_npts,mean,stdv:    6218.1  52.021  21.952
+
+
+
+
+
+ /////////////////////////////////////////////
+    CORRECTIONS FOR NAVIGATIONAL ERRORS
+ //////////// (add these values)  ////////////
+ /////////////////////////////////////////////
+
+
+ D_dROTA_aft (deg) guess,residual,total :  -0.000-21.420-21.420
+
+ D_dROTA_fore (deg) guess,residual,total :  -0.000 -1.674 -1.674
+
+ D_PITCH (deg) guess,residual,total :  -0.000  5.627  5.627
+
+ D_HEADING (deg) guess,residual,total :  -0.000 -3.622 -3.622
+
+ RANGE_DELAY_AFT (m) guess,residual,total :     0.    0.    0.
+
+ RANGE_DELAY_FORE (m) guess,residual,total :     0.    0.    0.
+
+ D_VHACFT (m/s) guess,residual,total :  -0.00************
+
+
+
+
+ /////////////////////////////////////////////

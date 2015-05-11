@@ -1,0 +1,16 @@
+azimuth_corr            =   0.000
+elevation_corr          =   0.000
+rangevalue_delay_corr   =   0.000
+longitude_corr          =   0.000
+latitude_corr           =   0.000
+pressure_alt_corr       =   0.000
+radar_alt_corr          =   0.000
+ew_gndspd_corr          =  -7.783
+ns_gndspd_corr          =   0.000
+vert_vel_corr           =   0.000
+heading_corr            =   0.000
+roll_corr               =   0.000
+pitch_corr              =   6.761
+drift_corr              = -13.456
+rot_angle_corr          =-360.510
+tilt_corr               =   1.581
