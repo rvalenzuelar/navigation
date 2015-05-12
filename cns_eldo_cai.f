@@ -2391,7 +2391,7 @@ c------------------------------------------------------------------
 c------------------------------------------------------------------------------
 c This version works well with the lower left coordinate
 c in the DTM ASCII file (RV)
-      y_acft=(orig_lat-xlat_acft)*deg_lat+dysn_guess 
+      y_acft=(orig_lat-xlat_acft)*deg_lat+dysn_guess
 c------------------------------------------------------------------------------      
       if(ipr_alt.eq.1)then
 	z_acft=p_alt_acft+dzacft_guess
