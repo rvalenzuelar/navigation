@@ -1,4 +1,4 @@
-'/home/rvalenzuela/P3_v2/cfac/c03/leg03_run01'        ! 'DIRECTORY FOR WRITING'
+'/home/rvalenzuela/P3_v2/cfac/c03/leg03_run04_altcor'        ! 'DIRECTORY FOR WRITING'
 '/home/rvalenzuela/P3_v2/cfradTxt/c03/leg03_cor/VG'     ! 'DIRECTORY FOR READING TEXT FILE
 173                        ! Number of text files
 23 01 2001                 ! DD MM YYYY
@@ -12,12 +12,12 @@
 ---------------------------------------------------------------------------
 1.000 1.000 0.000          ! REL_WGHTS (0->1) FOR dZsurf, Vsurf, dVinsitu
 ---------------------------------------------------------------------------
-0 0                        ! RETRIEVAL OF dTILT_aft, dTILT_fore (1/0)
+1 1                        ! RETRIEVAL OF dTILT_aft, dTILT_fore (1/0)
 1 1                        ! RETRIEVAL OF dROTA_aft, dROTA_fore (1/0)
 1 1                        ! RETRIEVAL OF dPITCH,dHEADING (1/0)
-0 0                        ! RETRIEVAL OF RGE_DLY_aft, RGE_DLY_fore (1/0)
+1 1                        ! RETRIEVAL OF RGE_DLY_aft, RGE_DLY_fore (1/0)
 0 0 0                      ! RETRIEVAL OF dX_acft, dY_acft, dZ_acft (1/0)
-0                          ! RETRIEVAL OF dVH_acft (1/0)
+1                          ! RETRIEVAL OF dVH_acft (1/0)
 ---------------------------------------------------------------------------
 0         ! SIMULATION WITH -dXXX_GUESS (1/0)
 ---------------------------------------------------------------------------
