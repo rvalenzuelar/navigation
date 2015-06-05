@@ -1,8 +1,8 @@
-'/home/rvalenzuela/P3_v2/cfac/c03/l03_r07_palt_ve'        ! 'DIRECTORY FOR WRITING'
-'/home/rvalenzuela/P3_v2/cfradTxt/c03/leg03_cor/VE'     ! 'DIRECTORY FOR READING TEXT FILE
-173                        ! Number of text files
-23 01 2001                 ! DD MM YYYY
-214430 214839              ! HHMMSS_start HHMMSS_stop
+'/home/rvalenzuela/P3_v2/cfac/c04/l11_r07_palt_ve'        ! 'DIRECTORY FOR WRITING'
+'/home/rvalenzuela/P3_v2/cfradTxt/c04/leg11_cor/VE'     ! 'DIRECTORY FOR READING TEXT FILE
+153                        ! Number of text files
+25 01 2001                 ! DD MM YYYY
+181800 182245              ! HHMMSS_start HHMMSS_stop
 38.55  -123.55                 ! LAT LON ORIGIN (degrees) 			---> center of obs domain
 1 2 3 4 5 6 7 0 0 0 0 0 0 0 0         ! 15 GATES TO DISMISS (0 if not)	
 0. 45.                     ! Dmin, Dmax (km) FOR RADAR_DATA		

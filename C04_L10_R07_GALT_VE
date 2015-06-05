@@ -1,16 +1,16 @@
-'/home/rvalenzuela/P3_v2/cfac/c03/l03_r07_palt_ve'        ! 'DIRECTORY FOR WRITING'
-'/home/rvalenzuela/P3_v2/cfradTxt/c03/leg03_cor/VE'     ! 'DIRECTORY FOR READING TEXT FILE
-173                        ! Number of text files
-23 01 2001                 ! DD MM YYYY
-214430 214839              ! HHMMSS_start HHMMSS_stop
+'/home/rvalenzuela/P3_v2/cfac/c04/l10_r07_galt_ve'        ! 'DIRECTORY FOR WRITING'
+'/home/rvalenzuela/P3_v2/cfradTxt/c04/leg10_cor/VE'     ! 'DIRECTORY FOR READING TEXT FILE
+71                        ! Number of text files
+25 01 2001                 ! DD MM YYYY
+180530 180945              ! HHMMSS_start HHMMSS_stop
 38.55  -123.55                 ! LAT LON ORIGIN (degrees) 			---> center of obs domain
 1 2 3 4 5 6 7 0 0 0 0 0 0 0 0         ! 15 GATES TO DISMISS (0 if not)	
 0. 45.                     ! Dmin, Dmax (km) FOR RADAR_DATA		
-1                          ! ALTITUDE (pressure=1,radar=2) ( orography -> 1)	
+2                          ! ALTITUDE (pressure=1,geopotential=2) 	
 5. 40.                    ! REF_min (at 10km), REF_max (dBZ)
-1                          ! VDOP(1:VE,2:VG,3:VU)		--->1:RAW(VE), 2:CORRECTED FOR VACFT(VG), 3:UNFOLDED(VU
+1                          ! VDOP(1:VE,2:VG,3:VU)		--->1:RAW(VE), 2:CORRECTED FOR VACFT(VG), 3:UNFOLDED(VU)
 ---------------------------------------------------------------------------
-1.000 1.000 0.000          ! REL_WGHTS (0->1) FOR dZsurf, Vsurf, dVinsitu
+1.000 0.000 1.000          ! REL_WGHTS (0->1) FOR dZsurf, Vsurf, dVinsitu
 ---------------------------------------------------------------------------
 0 0                        ! RETRIEVAL OF dTILT_aft, dTILT_fore (1/0)
 1 1                        ! RETRIEVAL OF dROTA_aft, dROTA_fore (1/0)
