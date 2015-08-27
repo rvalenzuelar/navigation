@@ -40,7 +40,7 @@ c**** FICHIER 'mes_parametres'
 c******************************************************************
 c
 
-      parameter (MAXRAD=2,MAXFREQ=5,MAXPARM=10,MAXPORT=800)
+      parameter (MAXRAD=2,MAXFREQ=5,MAXPARM=10,MAXPORT=1000)
       parameter (MAXFREQRAD=MAXFREQ*MAXPARM)
       parameter (MAXPARAD=MAXRAD*MAXPARM)
       parameter (MAXPORAD=MAXRAD*MAXPORT)
@@ -123,7 +123,7 @@ c Variable for reading text files
         REAL VS(MAXPORT),VL(MAXPORT),VG(MAXPORT),VU(MAXPORT)
 
 ! Variables for input file list
-        CHARACTER(len=80) infilename
+        CHARACTER(len=150) infilename
         INTEGER  nfile,ifile,lastfile     ! total number of netcdf text file & file number
         INTEGER iopen
 
