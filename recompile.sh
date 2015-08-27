@@ -2,9 +2,7 @@
 
 # Bash script to compile the navigation correction code
 
-# rm aster2txt cns_noaa-p3_rv netcdf2text 
-# rm aster2txt cns_eldo_cai netcdf2text
-rm aster2txt cns_eldo_cai
+rm cns_eldo_cai
 
 NETCDF="/usr/local"
 
@@ -12,18 +10,4 @@ FLIB="-L$NETCDF/lib -lnetcdf -lnetcdff -lcurl -lhdf5 -lhdf5_hl"
 
 FINC="-I$NETCDF/include -I/usr/include/geotiff"
 
-# for home
-# CLIB="-L/usr/lib -lgeotiff -ltiff -L/usr/local/lib"
-
-# for work
-# CLIB="-lgeotiff -ltiff"
-
-# CINC="-I/usr/include/geotiff"
-
-# gfortran -g -o cns_noaa-p3_rv cns_noaa-p3_rv.f90 chol_inv.f $FLIB $FINC
 gfortran -g -o cns_eldo_cai cns_eldo_cai.f chol_inv.f $FLIB $FINC
-
-# gfortran -g -o netcdf2text netcdf2text.f90 $FLIB $FINC
-
-# gcc -o aster2txt aster2txt.c $CLIB $CINC
-
