@@ -209,7 +209,7 @@ c
      &         ,istart_sweep(2)
      &         ,itab(nxysurfmax),ihms_dtm(6),ialtsurf_wri(nxysurfmax)   
 c
-      character path_abs*18,directory*60,dir_read*100
+      character path_abs*18,directory*150,dir_read*150
      &         ,fich_sis*30
      &         ,dtm_file*50,fich_cornav*30
      &         ,wrisurfile*50
